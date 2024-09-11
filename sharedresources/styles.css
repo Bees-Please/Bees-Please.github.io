@@ -6,6 +6,8 @@
 }
 
 body{
+  background-image: url("../static/assets");
+  background-repeat: repeat-y;
   background-color: black;
   padding: 15px;
   margin: 0;
