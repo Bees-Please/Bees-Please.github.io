@@ -1,17 +1,17 @@
 /* todo: license + link to designer */
 /* standard header text IBM VGA 9x16 */
 @font-face {
-  font-family: IBMVGA;
-  /* src: url('/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff'); */
-  src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff');
+  font-family: "IBMVGA";
+  src: url('../fonts/MxPlus_IBM_VGA_9x16.woff');
+  /* src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff'); */
 }
 
 /* todo: license + link to designer */
 /* standard body text VCR OSD MONO */
-@font-face {
-  font-family: VCRMONO;
-  /* src: url('/shared_resources/fonts/VCROSDMONO.woff'); */
-  src: url('https://bees-please.github.io/shared_resources/fonts/VCROSDMONO.woff');
+@font-face{
+  font-family: "VCRMONO";
+  src: url('../fonts/VCR_OSD_Mono.woff');
+  /* src: url('https://bees-please.github.io/shared_resources/fonts/VCR_OSD_Mono.woff'); */
 }
 
 /* color variables */
@@ -28,7 +28,7 @@
 /* standard text and background layer */
 * {
   color: var(--light);
-  text-shadow:1px 3px 3px var(--light), 1px 1px 10px var(--light);
+  text-shadow:0px 0px 5px var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
 }
@@ -46,7 +46,6 @@ p {
   margin: 0;
   font-family: VCRMONO;
   font-size: var(--all-text);
-  text-shadow: 0 0 5px var(--light)
 }
 
 h1 {
