@@ -28,6 +28,7 @@
 /* standard text and background layer */
 * {
   color: var(--light);
+  text-shadow:1px 3px 3px var(--light), 1px 1px 10px var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
 }
@@ -45,6 +46,7 @@ p {
   margin: 0;
   font-family: VCRMONO;
   font-size: var(--all-text);
+  text-shadow: 0 0 5px var(--light)
 }
 
 h1 {
