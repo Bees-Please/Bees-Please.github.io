@@ -2,14 +2,14 @@
 /* standard header text IBM VGA 9x16 */
 @font-face {
   font-family: IBMVGA;
-  src: url('../../static/fonts/MxPlus_IBM_VGA_9x16.woff');
+  src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff');
 }
 
 /* todo: license + link to designer */
 /* standard body text VCR OSD MONO */
 @font-face {
   font-family: VCRMONO;
-  src: url('../../static/fonts/VCR_OSD_MONO.woff');
+  src: url('https://bees-please.github.io/shared_resources/fonts/VCR_OSD_MONO.woff');
 }
 
 /* color variables */
