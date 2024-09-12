@@ -34,6 +34,11 @@
   font-size: var(--all-text);
 }
 
+/* main div/ containing body */
+.main {
+  margin: 15px;
+}
+
 /* standard body text stuff */
 body {
   padding: 15px;
@@ -61,11 +66,13 @@ h1 {
 fieldset {
   border: 2px solid var(--light);
   box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
-
 }
 
 .wall {
+  margin: 0.25in;
   border: 2px solid var(--light);
+
+  box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
 }
 
 /* TOP NAVBAR */
@@ -104,6 +111,8 @@ fieldset {
 .intnav:hover {
   background-color: var(--light);
   color: var(--dark);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .intnav:before {
