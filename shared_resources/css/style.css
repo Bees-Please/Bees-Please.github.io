@@ -20,41 +20,42 @@
   --blue: #607196;
   --navy: #404E80;
   --dark: #0f0a0a;
+  --all-text: 25px;
 }
 
 /* standard text and background layer */
 * {
   color: var(--light);
   background-color: var(--dark);
-  font-size: 25px;
+  font-size: var(--all-text);
   font-family: IBMVGA;
 }
 
 /* standard body text */
 body {
-  padding: 15px;
+  padding: 15px; 
   margin: 0;
   font-family: VCRMONO;
-  font-size: 25px;
+  font-size: var(--all-text);
 }
 
 p {
   padding: 15px;
   margin: 0;
   font-family: VCRMONO;
-  font-size: 25px;
+  font-size: var(--all-text);
 }
 
 h1 {
   padding: 15px;
   margin: 0;
   font-family: IBMVGA;
-  font-size: 25px;
+  font-size: var(--all-text);
 }
 
 /* navbars and higher order selectables */
 .navbar ul {
-  font-size: 25px;
+  font-size: var(--all-text);
   font-family: IBMVGA;
   list-style-type: none;
   padding: 0px;
@@ -80,4 +81,4 @@ h1 {
   float: left
 }
 
-/* these are just used to test colors */
+
