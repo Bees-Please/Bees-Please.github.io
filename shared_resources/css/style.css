@@ -2,16 +2,16 @@
 /* standard header text IBM VGA 9x16 */
 @font-face {
   font-family: "IBMVGA";
-  src: url('../fonts/MxPlus_IBM_VGA_9x16.woff');
-  /* src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff'); */
+  /* src: url('../fonts/MxPlus_IBM_VGA_9x16.woff'); */
+  src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff');
 }
 
 /* todo: license + link to designer */
 /* standard body text VCR OSD MONO */
-@font-face{
+@font-face {
   font-family: "VCRMONO";
-  src: url('../fonts/VCR_OSD_Mono.woff');
-  /* src: url('https://bees-please.github.io/shared_resources/fonts/VCR_OSD_Mono.woff'); */
+  /* src: url('../fonts/VCR_OSD_Mono.woff'); */
+  src: url('https://bees-please.github.io/shared_resources/fonts/VCR_OSD_Mono.woff');
 }
 
 /* color variables */
@@ -23,19 +23,20 @@
   --navy: #404E80;
   --dark: #0f0a0a;
   --all-text: 25px;
+  --blur: 5px;
 }
 
 /* standard text and background layer */
 * {
   color: var(--light);
-  text-shadow:0px 0px 5px var(--light);
+  text-shadow: 0px 0px var(--blur) var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
 }
 
-/* standard body text */
+/* standard body text stuff */
 body {
-  padding: 15px; 
+  padding: 15px;
   margin: 0;
   font-family: VCRMONO;
   font-size: var(--all-text);
@@ -55,6 +56,18 @@ h1 {
   font-size: var(--all-text);
 }
 
+/* accoutroments */
+
+fieldset {
+  border: 2px solid var(--light);
+  box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
+
+}
+
+.wall {
+  border: 2px solid var(--light);
+}
+
 /* TOP NAVBAR */
 /* navbars and higher order selectables */
 .navbar ul {
@@ -69,8 +82,6 @@ h1 {
 /* outbound links (removes underline) */
 .navbar a {
   text-decoration: none;
-  padding-right: 15px;
-  padding-left: 15px;
   display: block;
 }
 
@@ -86,10 +97,8 @@ h1 {
 
 /* OTHER NAVIGATION */
 /* navbars and higher order selectables */
-.intnav{
+.intnav {
   text-decoration: none;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .intnav:hover {
@@ -97,10 +106,10 @@ h1 {
   color: var(--dark);
 }
 
-.intnav:before{
-  content: " [ "
+.intnav:before {
+  content: "[ "
 }
 
-.intnav:after{
+.intnav:after {
   content: " ]"
 }
