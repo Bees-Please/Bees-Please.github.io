@@ -2,6 +2,7 @@
 /* standard header text IBM VGA 9x16 */
 @font-face {
   font-family: IBMVGA;
+  /* src: url('/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff'); */
   src: url('https://bees-please.github.io/shared_resources/fonts/MxPlus_IBM_VGA_9x16.woff');
 }
 
@@ -9,7 +10,8 @@
 /* standard body text VCR OSD MONO */
 @font-face {
   font-family: VCRMONO;
-  src: url('https://bees-please.github.io/shared_resources/fonts/VCR_OSD_MONO.woff');
+  /* src: url('/shared_resources/fonts/VCROSDMONO.woff'); */
+  src: url('https://bees-please.github.io/shared_resources/fonts/VCROSDMONO.woff');
 }
 
 /* color variables */
@@ -83,21 +85,21 @@ h1 {
 
 /* OTHER NAVIGATION */
 /* navbars and higher order selectables */
-.internal_nav{
+.intnav{
   text-decoration: none;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.internal_nav:hover {
+.intnav:hover {
   background-color: var(--light);
   color: var(--dark);
 }
 
-.internal_nav:before{
+.intnav:before{
   content: " [ "
 }
 
-.internal_nav:after{
+.intnav:after{
   content: " ]"
 }
