@@ -28,7 +28,6 @@
   color: var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
-  font-family: IBMVGA;
 }
 
 /* standard body text */
