@@ -52,6 +52,7 @@ h1 {
   font-size: var(--all-text);
 }
 
+/* TOP NAVBAR */
 /* navbars and higher order selectables */
 .navbar ul {
   font-size: var(--all-text);
@@ -80,4 +81,23 @@ h1 {
   float: left
 }
 
+/* OTHER NAVIGATION */
+/* navbars and higher order selectables */
+.internal_nav{
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
+.internal_nav:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.internal_nav:before{
+  content: " [ "
+}
+
+.internal_nav:after{
+  content: " ]"
+}
