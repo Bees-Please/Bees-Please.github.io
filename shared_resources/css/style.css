@@ -1,0 +1,69 @@
+/* todo: license + link to designer */
+/* standard header text IBM VGA 9x16 */
+@font-face {
+  font-family: IBMVGA;
+  src: url('../../static/fonts/MxPlus_IBM_VGA_9x16.woff');
+}
+
+/* todo: license + link to designer */
+/* standard body text VCR OSD MONO */
+@font-face {
+  font-family: VCRMONO;
+  src: url('../../static/fonts/VCR_OSD_MONO.woff');
+}
+
+/* color variables */
+:root {
+  --light: #FFFFF1;
+  --yellow: #FFBB00;
+  --orange: #FA6000;
+  --blue: #607196;
+  --navy: #404E80;
+  --dark: #0f0a0a;
+}
+
+/* standard text and background layer */
+* {
+  color: var(--light);
+  background-color: var(--dark);
+  font-size: 25px;
+  font-family: IBMVGA;
+}
+
+/* standard body text */
+body {
+  padding: 15px;
+  margin: 0;
+  font-family: VCRMONO;
+  font-size: 25px;
+}
+
+/* navbars and higher order selectables */
+.navbar ul {
+  font-size: 25px;
+  font-family: IBMVGA;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* outbound links (removes underline) */
+.navbar a {
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+}
+
+/* change color on hover */
+.navbar a:hover {
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+
+.navbar li {
+  float: left
+}
+
+/* these are just used to test colors */
