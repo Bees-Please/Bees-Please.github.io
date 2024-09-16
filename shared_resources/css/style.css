@@ -29,7 +29,7 @@
 /* standard text and background layer */
 * {
   color: var(--light);
-  text-shadow: 0px 0px var(--blur) var(--light);
+  /* text-shadow: 0px 0px var(--blur) var(--light); */
   background-color: var(--dark);
   font-size: var(--all-text);
 }
