@@ -24,12 +24,14 @@
   --dark: #0f0a0a;
   --all-text: 25px;
   --blur: 5px;
+  --strong_blur: 2px;
 }
 
 /* standard text and background layer */
 * {
   color: var(--light);
-  /* text-shadow: 0px 0px var(--blur) var(--light); */
+  /* shouldn't override other target's blur light value */
+  text-shadow: 0px 0px var(--blur) var(--light), 0px 0px var(--strong_blur) var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
 }
