@@ -31,6 +31,7 @@
 * {
   color: var(--light);
   /* shouldn't override other target's blur light value */
+  /* shadow here shouldn't override the 'blur' of the exit page */
   text-shadow: 0px 0px var(--blur) var(--light), 0px 0px var(--strong_blur) var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
@@ -67,14 +68,14 @@ h1 {
 
 fieldset {
   border: 2px solid var(--light);
-  box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
+  box-shadow: inset 0px 0px var(--blur) var(--light);
 }
 
 .wall {
   margin: 0.25in;
   border: 2px solid var(--light);
 
-  box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
+  box-shadow: inset 0px 0px var(--blur) var(--light);
 }
 
 /* TOP NAVBAR */
@@ -123,4 +124,25 @@ fieldset {
 
 .intnav:after {
   content: " ]"
+}
+
+.extnav {
+  text-decoration: none;
+}
+
+.extnav:hover {
+  background-color: var(--yellow)
+}
+
+/* some utility stuff */
+.centered {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40%;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
 }
