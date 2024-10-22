@@ -17,6 +17,8 @@
     background-color: var(--dark);
     text-shadow: 0px 0px var(--blur) var(--orange), 0px 0px var(--blur) var(--orange), 0px 0px var(--blur) var(--orange), 0px 0px var(--blur) var(--orange);
     color: var(--orange);
+
+    
 }
 
 .nav404:hover {
