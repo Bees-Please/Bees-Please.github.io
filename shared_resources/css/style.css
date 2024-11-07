@@ -23,6 +23,7 @@
   --navy: #404E80;
   --dark: #0f0a0a;
   --all-text: 25px;
+  --h2: 35px;
   --blur: 5px;
   --strong_blur: 2px;
 }
@@ -35,6 +36,13 @@
   text-shadow: 0px 0px var(--blur) var(--light), 0px 0px var(--strong_blur) var(--light);
   background-color: var(--dark);
   font-size: var(--all-text);
+}
+
+h2 {
+  padding: 15px;
+  margin: 0;
+  font-family: VCRMONO;
+  font-size: var(--h2);
 }
 
 /* main div/ containing body */
@@ -64,19 +72,26 @@ h1 {
   font-size: var(--all-text);
 }
 
-/* accoutroments */
+/* accoutroments + seperator styling */
 
 fieldset {
   border: 2px solid var(--light);
-  box-shadow: inset 0px 0px var(--blur) var(--light);
+  /* this should add the blur inside AND outside the box */
+  box-shadow: inset 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
 }
 
 .wall {
   margin: 0.25in;
   border: 2px solid var(--light);
-
   box-shadow: inset 0px 0px var(--blur) var(--light);
 }
+
+/* add HR, VR rules here, make blur */
+/* add table separators here + individual styling */
+hr {
+  box-shadow: 0px 0px var(--blur) var(--light), 0px 0px var(--blur) var(--light);
+}
+
 
 /* TOP NAVBAR */
 /* navbars and higher order selectables */
@@ -113,6 +128,7 @@ fieldset {
 
 .intnav:hover {
   background-color: var(--light);
+  box-shadow: 0px 0px var(--blur) var(--light), 0px 0px var(--strong_blur) var(--light);
   color: var(--dark);
   padding-left: 0px;
   padding-right: 0px;
@@ -145,4 +161,10 @@ fieldset {
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
+}
+
+/* blog post formatting */
+.post {
+  margin-left: 10%;
+  margin-right: 10%;
 }
