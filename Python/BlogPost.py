@@ -5,7 +5,7 @@ import geocoder
 from datetime import date, datetime
 
 # --- NECESSARY FILE LOCATIONS ---
-cwd = os.getcwd() # CWD
+cwd = os.getcwd() + "\\.." # CWD
 markdown_files = cwd + "\\blog\\md_files\\posts" # CWD -> markdown posts
 rendered_files = cwd + "\\blog\\entry" # CWD -> rendered-HTML posts
 post_list = cwd + "blog\\index.html" # index file of the post list (newest->oldest)
@@ -35,7 +35,6 @@ class Post:
 
     # Create MD file structure at CWD
     def create_empty_post(self):
-        folders = [f"{markdown_files}\\{self.date}_{self.name}", f"{markdown_files}\\{self.date}_{self.name}\\assets"]
 
         # make parent folders
         for folder in folders:
@@ -132,15 +131,3 @@ class Post:
         with open(template, "r", encoding="utf-8") as template_file:
             post_template = template_file.read()
             self.body = markdown.markdown(post_template)
-
-
-
-post = Post("Concern, apathy, confusion")
-post.create_empty_post()
-post.create_render_location()
-post.render()
-
-# Works good so far, next i need to make it so that it dumps it into the html template for posts.
-# Template is built,
-# Need to add a clause that fills the title tag with the name of the file/ post :D
-# need to do some auto filling
